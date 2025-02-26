@@ -3,20 +3,19 @@
 
 
 :root {
-    --bg-color: #1b1b22;
-    --second-bg-color: #222228;
-    --span-color: rgb(132, 0, 255);
+    --primary: #1b1b22;
+    --secondary: #222228;
+    --color: rgb(132, 0, 255);
 }
 
 /* NavBar Section */
 
 span {
     font-weight: bold;
-    color: rgb(132, 0, 255);
+    color: var(--color);
 }
 header {
-    background-color: transparent;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     z-index: 1;
     position: fixed;
     width: 100%;
@@ -37,42 +36,47 @@ ul {
     background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28132, 0, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-light .navbar-toggler {
-    border: 2px solid var(--span-color);
+    border: 2px solid var(--color);
 }
 
 /* Home Section */
 
 .home {
-    background-color: var(--bg-color);
+    background-color: var(--primary);
     padding-top: 6em;
     padding-left: 10px;
     padding-right: 10px;
 }
 .home p {
-    padding-top: 150px;
+    padding-top: 10em;
+    
 }
 .home h1 {
     font-size: 55px;
 }
+.home .para {
+    margin-top: -9em;
+    opacity: 70%;
+}
 .span-btn {
-    background: var(--span-color);
+    background: var(--color);
     border: none;
     border-radius: 5px;
     width: 35%;
     height: 11%;
-    color: rgb(191, 191, 191);
+    color: rgb(191, 183, 183);
     font-weight: 700;
     margin-top: 5%;
     font-size: 1.1rem;
 }
-.home .logo {
+.logo {
     height: 525px;
 }
 
 /* Projects Section */
 
 .projects {
-    background-color: var(--second-bg-color);
+    background-color: var(--secondary);
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -83,10 +87,44 @@ ul {
     font-size: 45px;
 }
 .projects .card-parent {
-    padding-top: 1.5em;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
+}
+.projects .card-parent p {
+    opacity: 70%;
 }
 .projects a {
     text-decoration: none;
     color: white;
+}
+.h-project {
+    height: 13em;
+}
+.about {
+    background: var(--primary);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.about .details {
+    padding-left: 5em;
+}
+.about h1 {
+    font-size: 50px;
+}
+.about p {
+    opacity: 70%;
+}
+.html {
+    width: 15%;
+    height: 30px;
+    background: #6c6c89;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+.j {
+    width: 20%;
 }
