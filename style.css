@@ -1,0 +1,22 @@
+/* dark color code 1c1c24 or 1b1b22 */
+/* grey color code 28242c or 24242c */
+
+
+span {
+    color: rgb(132, 0, 255);
+}
+header {
+    background-color: #1b1b22;
+}
+header h2 {
+    font-weight: 700;
+    padding-inline-start: 5%;
+}
+ul {
+    inline-size: 100%;
+    justify-content: space-evenly;
+}
+.navbar {
+    width: 100%;
+    justify-content: space-evenly;
+}
