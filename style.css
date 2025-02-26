@@ -4,9 +4,11 @@
 
 :root {
     --bg-color: #1b1b22;
-    --second-bg-color: #161616;
+    --second-bg-color: #222228;
     --span-color: rgb(132, 0, 255);
 }
+
+/* NavBar Section */
 
 span {
     font-weight: bold;
@@ -37,10 +39,14 @@ ul {
 .navbar-light .navbar-toggler {
     border: 2px solid var(--span-color);
 }
+
+/* Home Section */
+
 .home {
     background-color: var(--bg-color);
-    gap: 2.5rem;
     padding-top: 6em;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .home p {
     padding-top: 150px;
@@ -52,13 +58,35 @@ ul {
     background: var(--span-color);
     border: none;
     border-radius: 5px;
-    width: 30%;
+    width: 35%;
     height: 11%;
     color: rgb(191, 191, 191);
     font-weight: 700;
     margin-top: 5%;
     font-size: 1.1rem;
 }
-.home .img-div {
+.home .logo {
     height: 525px;
+}
+
+/* Projects Section */
+
+.projects {
+    background-color: var(--second-bg-color);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.projects p {
+    padding-top: 4em;
+}
+.projects h2 {
+    font-size: 45px;
+}
+.projects .card-parent {
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+}
+.projects a {
+    text-decoration: none;
+    color: white;
 }
