@@ -114,13 +114,14 @@ ul {
 .about p {
     opacity: 70%;
 }
-.html {
+.skill {
     width: 15%;
     height: 30px;
     background: #6c6c89;
     text-align: center;
     border-radius: 3px;
     cursor: pointer;
+    padding: 3px;
 }
 .skills {
     display: flex;
@@ -130,4 +131,30 @@ ul {
 }
 .j {
     width: 20%;
+}
+
+/* Contact Me Section */
+.contact {
+    background-color: var(--secondary);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.contact p {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 2em;
+}
+.contact h2 {
+    text-align: center;
+    font-size: 44px;
+    padding-top: 1em;
+}
+.contact form {
+    padding: 5%;
+    background-color: #ffffff10;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+}
+.contact .contact-form {
+    height: 450px;
 }
