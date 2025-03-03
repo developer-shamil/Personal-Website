@@ -15,21 +15,22 @@ span {
     color: var(--color);
 }
 header {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     z-index: 1;
     position: fixed;
-    width: 100%;
+    inline-size: 100%;
 }
 header h2 {
     font-weight: 700;
     padding-inline-start: 5%;
+    cursor: pointer;
 }
 ul {
     inline-size: 100%;
     justify-content: space-evenly;
 }
 .navbar {
-    width: 100%;
+    inline-size: 100%;
     justify-content: space-evenly;
 }
 .navbar-light .navbar-toggler-icon {
@@ -43,51 +44,51 @@ ul {
 
 .home {
     background-color: var(--primary);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
 }
 .home p {
-    padding-top: 10em;
+    padding-block-start: 10em;
     
 }
 .home h1 {
     font-size: 55px;
 }
 .home .para {
-    margin-top: -9em;
+    margin-block-start: -9em;
     opacity: 70%;
 }
 .span-btn {
     background: var(--color);
     border: none;
     border-radius: 5px;
-    width: 150px;
-    height: 50px;
+    inline-size: 150px;
+    block-size: 50px;
     color: rgb(191, 183, 183);
     font-weight: 700;
-    margin-top: 5%;
+    margin-block-start: 5%;
     font-size: 1.1rem;
 }
 .logo {
-    height: 39em;
-    padding-top: 3em;
+    block-size: 39em;
+    padding-block-start: 3em;
 }
 
 /* Projects Section */
 
 .projects {
     background-color: var(--secondary);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
 }
 .projects p {
-    padding-top: 4em;
+    padding-block-start: 4em;
 }
 .projects h2 {
     font-size: 45px;
 }
 .projects .card-parent {
-    padding-bottom: 4em;
+    padding-block-end: 4em;
 }
 .projects .card-parent p {
     opacity: 70%;
@@ -97,16 +98,16 @@ ul {
     color: white;
 }
 .h-project {
-    height: 13em;
+    block-size: 13em;
 }
 .about {
     background: var(--primary);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
 }
 .about .details {
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-inline-start: 3em;
+    padding-inline-end: 3em;
 }
 .about h1 {
     font-size: 50px;
@@ -115,8 +116,8 @@ ul {
     opacity: 70%;
 }
 .skill {
-    width: 80px;
-    height: 30px;
+    inline-size: 80px;
+    block-size: 30px;
     background: #6c6c89;
     text-align: center;
     border-radius: 3px;
@@ -126,32 +127,30 @@ ul {
 .skills {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    inline-size: 100%;
 }
 .my {
-    padding-bottom: 30px;
-}
-.skills .row .col-4 {
+    padding-block-end: 30px;
 }
 .j {
-    width: 80px;
+    inline-size: 80px;
 }
 
 /* Contact Me Section */
 .contact {
     background-color: var(--secondary);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
 }
 .contact p {
     font-size: 24px;
     text-align: center;
-    padding-top: 2em;
+    padding-block-start: 2em;
 }
 .contact h2 {
     text-align: center;
     font-size: 44px;
-    padding-top: 1em;
+    padding-block-start: 1em;
 }
 .contact form {
     padding: 5%;
@@ -160,5 +159,11 @@ ul {
     border-radius: 10px;
 }
 .contact .contact-form {
-    height: 450px;
+    block-size: 32em;
+}
+.error {
+    color: red;
+}
+.valid {
+    color: green;
 }
