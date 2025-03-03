@@ -167,3 +167,28 @@ ul {
 .valid {
     color: green;
 }
+
+/* Footer */
+
+footer {
+    background-color: var(--color);
+    text-align: center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer ul {
+    list-style: none;
+    text-align: start;
+    padding: 15px;
+    padding-left: 3em;
+    font-size: large;
+    opacity: 80%;
+}
+
+footer .container .row p {
+    text-align: start;
+    padding: 15px;
+    opacity: 80%;
+}
